@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300&family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 
 :root{
   --color-accent1:        #f4e9cd;
-  --color-stress:         #a5A;
+  --color-stress:         #4dc74b;
   --color-navbar:         #000;
-  --color-welcome:        #f4e9cd;
-  --color-background:     #9dbebb;
-  --color-projects:       #77aca2;
-  --color-certifications: #468189;
-  --color-contact:        #031926;
+  --color-welcome:        #2a6f97;
+  --color-background:     #014f86;
+  --color-projects:       #01497c;
+  --color-certifications: #013a63;
+  --color-contact:        #012a4a;
 }
 
 html{
@@ -19,7 +20,7 @@ html{
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Arima Madurai', cursive;
-  color: #35290C;
+  color: #8a73b1;
 }
 
 /* 1200px / 16px = 75em */
@@ -84,7 +85,7 @@ nav a{
   display:block;
   text-decoration:none;
   color:white;
-  font-size: 1vmax;
+  font-size: 1.2vmax;
   letter-spacing:4px;
   transition: all 1s ;
 }
@@ -99,6 +100,7 @@ nav a:hover{
   min-height:100vh;
   padding-top: 6rem;
   padding-bottom: 3rem;
+  border-bottom: 4px solid #EFEFEF; 
 }
 
 #welcome-section{
@@ -106,11 +108,10 @@ nav a:hover{
   letter-spacing: 4px;
   min-height: 75rem;
   height:auto;
-  color: #888;
+  color: #AEAEAE;
   padding-top: 10rem;
   font-weight: 900;
   font-size: 3rem;
-  color: var(--color-certifications);
 }
 #hi{
   font-size:4rem;
@@ -123,7 +124,7 @@ nav a:hover{
   margin-left:14vw;  
 }
 #name{
-  color:darkred;
+  color:#EFAFAA;
   letter-spacing:10px;
   margin-left:1rem;
 }
@@ -144,10 +145,11 @@ nav a:hover{
   height:auto;
 }
 #background-text p{
-  font-size: 1.9vmax;
+  font-size: 2.4vmax;
   padding: 5vh 10vw;
   line-height: 3.50rem;
   letter-spacing:2px;
+  color:#AEAEAE;
 }
 #background-text p:nth-child(2){
   margin-left: 3vw;
@@ -155,12 +157,12 @@ nav a:hover{
 #background img{
   width: 30vw;
   height: auto;
-  box-shadow: 10px 5px 6px #888, -10px -5px 6px #888;
+  box-shadow: 10px 5px 6px #8883, -10px -5px 6px #8883;
   border-radius: 15px;
   position:relative;
   top:10rem;
   offset: 120px;
-  transform: rotate(45deg) translatex(8rem) translatey(5rem)
+  transform: rotate(30deg) translatex(8rem) translatey(5rem)
 }
 
 #projects{
@@ -168,6 +170,7 @@ nav a:hover{
   height:auto;
 }
 h2{
+  font-family: 'Ubuntu', sans-serif;
   font-size: 4rem;
   letter-spacing: 2px;
   margin-top: 0;
@@ -264,10 +267,13 @@ a{
   margin: auto;
   border-radius: 6px;
   transition: all 1s ease-out;
-  flex: 0 0;
+  flex: 1 1;
+  z-index: 0;
+  padding: 2%;
 }
 #certifications img:hover{
   transform: scale(1.5,1.5);
+  background-color: var(--color-projects);
   
 }
 #certifications a{
@@ -275,7 +281,9 @@ a{
   min-width:250px; 
   margin: auto;
   margin-top: 5vh;
-  flex: 0 1 ;
+  flex: 1 1 ;
+  padding: 2%;
+
 }
 @media (max-width:1000px){
   #certification-container{
@@ -288,7 +296,7 @@ a{
     
   }
   #certifications img:hover{
-    transform: none;
+    transform: scale(1.33,1.33);
   }
 }
 
