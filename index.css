@@ -20,7 +20,7 @@ html{
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Arima Madurai', cursive;
-  color: #8a73b1;
+  color: #AAAAAA;
 }
 
 /* 1200px / 16px = 75em */
@@ -145,14 +145,14 @@ nav a:hover{
   height:auto;
 }
 #background-text p{
-  font-size: 2.4vmax;
-  padding: 5vh 10vw;
-  line-height: 3.50rem;
+  font-size: 2.2vmax;
+  padding: 1vmax 4vmax;
   letter-spacing:2px;
   color:#AEAEAE;
 }
 #background-text p:nth-child(2){
   margin-left: 3vw;
+  margin-top: 4vh;
 }
 #background img{
   width: 30vw;
