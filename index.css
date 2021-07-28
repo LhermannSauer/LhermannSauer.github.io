@@ -162,7 +162,7 @@ nav a:hover{
   position:relative;
   top:10rem;
   offset: 120px;
-  transform: rotate(30deg) translatex(8rem) translatey(5rem)
+  transform: rotate(15deg) translatex(8rem) translatey(5rem)
 }
 
 #projects{
