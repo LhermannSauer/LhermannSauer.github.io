@@ -2,12 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta lang="en" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/YdZVcDc/portfolio.jpg"
-    />
+    <meta property="og:image" content="https://i.ibb.co/brPy5bk/preview.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       property="og:description"
@@ -17,14 +13,12 @@
       property="description"
       content="Welcome to my online portfolio. You can see diferent projects certifications and a bit of information about me 😊"
     />
-    <meta
-      property="og:url"
-      content="https://xenodochial-bassi-5e219d.netlify.app/#projects"
-    />
+    <meta property="og:url" content="https://lhermannsauer.github.io" />
     <meta property="og:title" content="Leandro Hermann's Online Portfolio" />
     <title>Leandro Hermann Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/cbc67c8581.js"
       crossorigin="anonymous"
@@ -37,92 +31,8 @@
   </head>
 
   <body>
-    <nav class="nav collapsible">
-      <span class="fas fa-caret-square-down nav__toggler"></span>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#welcome">WELCOME</a></li>
-        <li class="nav__item"><a href="#background">BACKGROUND</a></li>
-        <li class="nav__item"><a href="#projects">PROJECTS</a></li>
-        <li class="nav__item"><a href="#certifications">CERTIFICATIONS</a></li>
-        <li class="nav__item"><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-
-    <!-- WELCOME SECTION -->
-
-    <section class="block block--dark block--trimmed-bottom hero" id="welcome">
-      <div class="container grid grid--cols-2">
-        <header class="block__header hero__content">
-          <h1 class="hero__heading">
-            Hi, it is <br />
-            nice meeting you
-          </h1>
-          <p class="hero__text">Welcome to my online portfolio.</p>
-        </header>
-
-        <picture>
-          <img
-            class="hero__image"
-            src="https://i.ibb.co/HYrPn4M/1612827948123.jpg"
-            alt=""
-          />
-        </picture>
-      </div>
-    </section>
-
-    <!-- BACKGROUND SECTION -->
-
-    <section class="background block--trimmed" id="background">
-      <div class="block container">
-        <h2 class="block__header animate__animated">My Background</h2>
-
-        <article class="grid grid--cols-2 step">
-          <img
-            src="/images/languages.png"
-            alt=""
-            class="background__image"
-            data-aos="fade-right"
-          />
-          <p data-aos="zoom-out">
-            During quarantine in 2020, I started learning different programming
-            languages, such as Python, C#, JavaScript and Java, learning the key
-            differences and the use of each one, so I had knowledge of the
-            options before specializing in one of them.
-          </p>
-        </article>
-        <article class="grid grid--cols-2 step">
-          <img
-            src="/images/backend.png"
-            alt=""
-            class="background__image"
-            data-aos="fade-left"
-          />
-          <p data-aos="zoom-out">
-            From there I moved into backend development. First I learned how to
-            write a simple store backend with Django, as Python was the language
-            I feel most comfortable with. Then I looked into NodeJs, as I
-            thought JavaScript is a key language to know.
-          </p>
-        </article>
-        <article class="grid grid--cols-2 step">
-          <img
-            src="/images/frontend.png"
-            alt=""
-            class="background__image"
-            data-aos="fade-right"
-          />
-          <p data-aos="zoom-out">
-            Finally, as a curious person who likes to have an understanding of
-            the big picture, I could not help but start learning a bit of
-            frontend development with React and React Native, along with Redux
-            and different CSS libraries.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="projects block--trimmed" id="projects">
-      <div class="block container">
+    <section class="block projects block--trimmed-bottom" id="projects">
+      <div class="block">
         <h2 class="block__header animate__animated">My Projects</h2>
 
         <div class="grid grid--cols-2 block__filter">
@@ -280,9 +190,9 @@
       </div>
     </section>
 
-    <section class="certifications block--trimmed" id="certifications">
+    <section class="certifications block--trimmed-bottom" id="certifications">
       <div class="block">
-        <h2 class="block__header">My previous steps</h2>
+        <h2 class="block__header">Previous steps in my path</h2>
 
         <div class="grid grid--cols-2 block__filter">
           <div class="input-group grid">
@@ -321,117 +231,77 @@
 
         <div class="block grid grid--cols-3 certificate__list">
           <a
-            href="https://codewithmosh.com/"
+            href="https://www.freecodecamp.org/lhermann"
             target="_blank"
             class="python backend"
-            ><img src="/images/certificates/django mosh.JPG" alt=""
-          /></a>
-          <a
-            href="https://www.udemy.com/certificate/UC-a1c1787b-7362-4a98-87c0-cfca6ee8d8ea/"
-            target="_blank"
-            class="golang"
-            ><img src="/images/certificates/Golang.jpg" alt=""
-          /></a>
-          <a
-            href="https://codewithmosh.com/"
-            target="_blank"
-            class="html frontend"
-            ><img src="/images/certificates/HTML3.JPG" alt=""
-          /></a>
-          <a href="https://codewithmosh.com/" target="_blank" class="java"
-            ><img src="/images/certificates/java1.JPG" alt=""
-          /></a>
-          <a href="https://codewithmosh.com/" target="_blank" class="java"
-            ><img src="/images/certificates/java2.JPG" alt=""
+            ><img src="https://i.imgur.com/VK9S6sd.jpg" alt=""
           /></a>
           <a
             href="https://www.freecodecamp.org/lhermann"
             target="_blank"
             class="javascript backend"
-            ><img src="/images/certificates/js algorithms.JPG" alt=""
-          /></a>
-          <a
-            href="https://codewithmosh.com/"
-            target="_blank"
-            class="javascript frontend"
-            ><img src="/images/certificates/mastering react.JPG" alt=""
-          /></a>
-          <a
-            href="https://codewithmosh.com/"
-            target="_blank"
-            class="javascript backend"
-            ><img src="/images/certificates/Node JS.JPG" alt=""
-          /></a>
-          <a href="https://codewithmosh.com/" target="_blank" class="python"
-            ><img src="/images/certificates/OOP.jpg" alt=""
-          /></a>
-          <a
-            href="https://www.freecodecamp.org/lhermann"
-            target="_blank"
-            class="python"
-            ><img src="/images/certificates/python data analysis.JPG" alt=""
-          /></a>
-          <a
-            href="https://www.udemy.com/certificate/UC-3f0e0d25-ad53-4ad1-a430-f3fa8167b3d5/"
-            target="_blank"
-            class="python backend"
-            ><img src="/images/certificates/python developer.jpg" alt=""
-          /></a>
-          <a
-            href="https://www.udemy.com/certificate/UC-a9c902c1-ce05-4ed4-8672-f4c7504c15af/"
-            target="_blank"
-            class="python backend"
-            ><img src="/images/certificates/Python scripting.jpg" alt=""
-          /></a>
-          <a
-            href="https://codewithmosh.com/"
-            target="_blank"
-            class="javascript frontend"
-            ><img src="/images/certificates/React Fundamentals.JPG" alt=""
-          /></a>
-          <a
-            href="https://codewithmosh.com/"
-            target="_blank"
-            class="mobile javascript frontend"
-            ><img src="/images/certificates/React native advanced.JPG" alt=""
+            ><img src="https://i.imgur.com/CixVSMm.jpg" alt=""
           /></a>
           <a
             href="https://www.freecodecamp.org/lhermann"
             target="_blank"
             class="html frontend"
-            ><img src="/images/certificates/responsive web design.JPG" alt=""
+            ><img
+              src="https://i.ibb.co/Pt6BwPT/Responsive-web-design.jpg"
+              alt=""
           /></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="block contact block--trimmed" id="contact">
-      <div class="container">
-        <h2 class="block__header">
-          Let's create something new,<br /><span class="color-stress stress"
-            >together</span
-          >
-        </h2>
-
-        <div class="links">
+          <a href="https://www.udemy.com/home" target="_blank" class="java"
+            ><img src="https://i.imgur.com/hAaTYDr.jpg" alt=""
+          /></a>
           <a
-            href="https://github.com/LhermannSauer"
+            href="https://codewithmosh.com/"
             target="_blank"
-            id="profile-link"
-            ><i class="fab fa-github"></i>GitHub</a
-          >
-          <!-- <a href='https://replit.com/@Lhermannsauer' target="_blank"><i class="fas fa-code"></i>Replit</a>
-          <a href='https://codepen.io/leandro-hermann-sauer' target="_blank"><i class="fab fa-html5"></i>PenCode</a> -->
-          <a href="mailto:l.hermannsauer@gmail.com"
-            ><i class="far fa-envelope"></i>Email Me</a
-          >
-          <a href="tel:+5491137837514"
-            ><i class="fas fa-mobile-alt"></i>Call Me</a
-          >
+            class="python backend"
+            ><img src="https://i.imgur.com/seIxMGs.jpg" alt=""
+          /></a>
+          <a
+            href="https://www.udemy.com/home"
+            target="_blank"
+            class="golang backend"
+            ><img src="https://i.imgur.com/UgPd07O.jpg" alt=""
+          /></a>
+          <a href="https://codewithmosh.com/" target="_blank" class="java"
+            ><img src="https://i.ibb.co/rpWQZR8/Java.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="javascript frontend"
+            ><img src="https://i.ibb.co/MpQspL0/React-Fundamentals.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="javascript frontend"
+            ><img src="https://i.ibb.co/KXn9Cfj/mastering-react.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="backend javascript"
+            ><img src="https://i.ibb.co/xfSPrb3/Node-JS.jpg" alt=""
+          /></a>
+          <a
+            href="https://codewithmosh.com/"
+            target="_blank"
+            class="frontend javascript mobile"
+            ><img
+              src="https://i.ibb.co/hWqCST7/React-native-advanced.jpg"
+              alt=""
+          /></a>
         </div>
       </div>
     </section>
 
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
